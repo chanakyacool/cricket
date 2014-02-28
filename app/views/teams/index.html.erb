@@ -1,8 +1,8 @@
 <h2>Registered Teams </h2>
 
- <% @teams.each do |team| %>
+ <% @teams.each do |t| %>
 
- <%= link_to (team.teamname), team %><br>
+ <%= link_to (t.teamname), t %>-<%= pluralize(t.count, "Player") %><br>
  <% end %>
  
  <h3> New Team Registeration </h3>
