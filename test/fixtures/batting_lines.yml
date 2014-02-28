@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  playername: MyString
+  runs: 1
+  sixes: 1
+  fours: 1
+  status: MyString
+  total: 1
+  team: 
+  player: 
+
+two:
+  playername: MyString
+  runs: 1
+  sixes: 1
+  fours: 1
+  status: MyString
+  total: 1
+  team: 
+  player: 

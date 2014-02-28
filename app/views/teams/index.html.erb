@@ -1,0 +1,13 @@
+<h2>Registered Teams </h2>
+
+ <% @teams.each do |team| %>
+
+ <%= link_to (team.teamname), team %><br>
+ <% end %>
+ 
+ <h3> New Team Registeration </h3>
+<%= form_for @team do |f| %>
+<%= f.label :teamname %>
+<%= f.text_field :teamname %>
+<%= f.submit "Create a Team" %>
+<% end %>

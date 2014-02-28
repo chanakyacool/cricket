@@ -1,0 +1,19 @@
+<h3>Enter the Players for <%= @team.teamname %> </h3> 
+
+
+<h2>Players For <%= @team.teamname %></h2>
+<% @team.players.each do |p| %>
+  <p>
+
+  	<li>
+	   
+	    <%= p.playername %>
+	</li>
+  </p>
+
+<% end %>
+
+<%= form_for ([@team, @team.players.build]) do |g| %>
+<%= g.text_field :playername %>
+<%= g.submit "Player" %>
+<% end %>
