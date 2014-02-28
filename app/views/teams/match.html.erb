@@ -1,0 +1,19 @@
+
+
+<%= form_tag('/match') do -%>
+  <%= select_tag :teamname, options_for_select(Team.all.collect{|p| p.teamname}), :onchange => "this.form.submit();" %>
+<% end -%>
+<br>
+<% unless (@team.nil?) %> 
+
+<% @team.players.each do |g| %>
+
+<li><%= g.playername %></li><br>
+<% end  %>
+
+
+<% end %>
+
+
+
+

@@ -23,4 +23,11 @@ def create
 end
 
 
+def match
+	   @teams = Team.all
+    @team = Team.find_by_teamname(params[:teamname]) 
+	
+end
+
+
 end

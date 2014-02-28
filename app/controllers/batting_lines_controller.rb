@@ -1,2 +1,3 @@
-class BattingLinesController < ApplicationsController
+class BattingLinesController < ApplicationController
+
 end

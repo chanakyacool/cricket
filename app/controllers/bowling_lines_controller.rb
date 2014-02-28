@@ -1,4 +1,4 @@
-class BowlingLinesController < ApplicationsController
+class BowlingLinesController < ApplicationController
 
 
 end

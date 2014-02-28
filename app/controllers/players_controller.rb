@@ -1,4 +1,4 @@
-class PlayersController < ApplicationsController
+class PlayersController < ApplicationController
 	def create
 		 @team = Team.find(params[:team_id])
 		@player = @team.players.create(params[:player])
