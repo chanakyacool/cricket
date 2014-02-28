@@ -1,4 +1,4 @@
-class BowlingLinesController < ActionController::Base
+class BowlingLinesController < ApplicationsController
 
 
 end

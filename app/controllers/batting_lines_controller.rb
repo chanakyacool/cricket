@@ -1,4 +1,2 @@
-class BattingLinesController < ActionController::Base
-
-
+class BattingLinesController < ApplicationsController
 end
