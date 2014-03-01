@@ -29,5 +29,9 @@ def match
 	
 end
 
-
+def match1
+	   @teams = Team.all
+    @team = Team.find_by_teamname(params[:teamname]) 
+	
+end
 end

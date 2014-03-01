@@ -1,0 +1,8 @@
+<% unless (@team.nil?) %> 
+
+<% @team.players.each do |g| %>
+
+<li><%= g.playername %></li><br>
+<% end  %>
+
+<% end %>	

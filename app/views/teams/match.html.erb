@@ -7,13 +7,17 @@
 <% unless (@team.nil?) %> 
 
 <% @team.players.each do |g| %>
-
+	
 <li><%= g.playername %></li><br>
 <% end  %>
 
 
 <% end %>
 
-
+<%= form_tag('/match1') do -%>
+  <%= select_tag :teamname, options_for_select(Team.all.collect{|p| p.teamname}) %>
+  <%= submit_tag "Select" %>
+<% end -%>
+	
 
 

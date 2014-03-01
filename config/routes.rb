@@ -1,12 +1,20 @@
 Cricket::Application.routes.draw do
   
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => "teams#index"
+  
+  
+  ActiveAdmin.routes(self)
+
 
   resources :teams do 
     resources :players  
   end
 
   match '/match' => "teams#match"
+
+  match '/match1' => "teams#match1"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
